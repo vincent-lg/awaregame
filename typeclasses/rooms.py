@@ -6,9 +6,9 @@ Rooms are simple containers that has no location of their own.
 """
 
 from evennia.contrib.ingame_python.typeclasses import EventRoom
+from evennia.contrib.aware.mixins import SignalsMixin
 
-
-class Room(EventRoom):
+class Room(SignalsMixin, EventRoom):
     """
     Rooms are like any Object, except their location is None
     (which is default). They also use basetype_setup() to
