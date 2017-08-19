@@ -34,6 +34,12 @@ from evennia.settings_default import *
 # This is the name of your game. Make it catchy!
 SERVERNAME = "Awaregame"
 
+# Change ports
+TELNET_PORTS = [22000]
+WEBSERVER_ENABLED = False
+WEBCLIENT_ENABLED = False
+WEBSOCKET_CLIENT_ENABLED = False
+AMP_PORT = 22001
 
 ######################################################################
 # Settings given in secret_settings.py override those in this file.
